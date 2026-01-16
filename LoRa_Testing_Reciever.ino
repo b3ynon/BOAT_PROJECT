@@ -115,22 +115,3 @@ void run_test_sequence(const char* filename) {
   dataFile.close();
   Serial.println("Sequence Finished. Data Saved.");
 }
-
-/*  if (Serial2.available()) {
-    msg = Serial2.readStringUntil('\n'); 
-   // msg.trim(); 
-    
-    // Print the raw message (e.g., "on,5") to your laptop screen
-    Serial.print("Received: ");
-    Serial.println(msg); 
-
-    // Check if the message STARTS with "on"
-    if (msg.startsWith("on")) {
-      digitalWrite(LED_GREEN, HIGH);
-    }
-    else if (msg.startsWith("off")) {
-      digitalWrite(LED_GREEN, LOW);
-    }
-  }
-}
-*/
